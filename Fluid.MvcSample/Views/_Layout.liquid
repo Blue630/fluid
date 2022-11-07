@@ -1,0 +1,14 @@
+<html>
+	<body>
+		{{ ViewData['Title'] }}
+
+        {% assign invoker = '_Layout' %}
+        {% partial '_Partial' %}
+
+		{% renderbody %}		
+
+		<pre>
+		{% rendersection footer %}
+		</pre>
+	</body>
+</html>
